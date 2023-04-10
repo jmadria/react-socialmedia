@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      `https://admin-backend-bdrj.onrender.com/posts`,
+      `https://admin-backend-65ys.onrender.com/posts`,
       {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },

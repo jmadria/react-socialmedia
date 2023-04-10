@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://admin-backend-bdrj.onrender.com/auth/register",
+      "https://admin-backend-65ys.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://admin-backend-bdrj.onrender.com/auth/login",
+      "https://admin-backend-65ys.onrender.com/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

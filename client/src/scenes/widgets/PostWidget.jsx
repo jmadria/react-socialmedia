@@ -36,7 +36,7 @@ const PostWidget = ({
 
   const patchLike = async () => {
     const response = await fetch(
-      `https://admin-backend-bdrj.onrender.com/posts/${postId}/like`,
+      `https://admin-backend-65ys.onrender.com/posts/${postId}/like`,
       {
         method: "PATCH",
         headers: {
@@ -67,7 +67,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://admin-backend-bdrj.onrender.com/assets/${picturePath}`}
+          src={`https://admin-backend-65ys.onrender.com/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">

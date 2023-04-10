@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     const response = await fetch(
-      "https://admin-backend-bdrj.onrender.com/posts",
+      "https://admin-backend-65ys.onrender.com/posts",
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://admin-backend-bdrj.onrender.com/posts/${userId}/posts`,
+      `https://admin-backend-65ys.onrender.com/posts/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

@@ -17,10 +17,13 @@ const ProfilePage = () => {
   const getUser = async () => {
     console.log(process.env.SERVER_URL);
     //const response = await fetch(`http://localhost:3001/users/${userId}`, {
-    const response = await fetch(`https://admin-backend-bdrj.onrender.com/users/${userId}`, {
-      method: "GET",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const response = await fetch(
+      `https://admin-backend-65ys.onrender.com/users/${userId}`,
+      {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     const data = await response.json();
     setUser(data);
   };
